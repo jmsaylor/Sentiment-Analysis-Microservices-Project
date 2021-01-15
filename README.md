@@ -1,8 +1,8 @@
 ## Discord Sentiment Analysis Microservices Project
 
-## Overview 
+## Motivation 
 
-Real-time monitoring of AI sentiment scores of multiple channels in a Discord Server.
+Monitoring of AI sentiment scores of multiple channels in a Discord Server.
 
 ## Tech Stack
 
@@ -11,7 +11,7 @@ TensorflowJS and/or Google Language API
 Express
 MongoDB
 
-![Imgur](https://imgur.com/Ucn8CuX.png)
+![Microservices Architecture Map](https://imgur.com/lgicwU5.png)
 
 # Discord Bot
 
