@@ -1,35 +1,8 @@
-## Discord Sentiment Analysis Microservices Project
-
-## Motivation 
-
-Monitoring of AI sentiment scores of multiple messaging channels in a server.
-
 ## Overview
 
-This project is in the process of being shifted to a microservices architecture. Initially, GCP Language API was used, but message volumes made that approach costly. Testing of TensorflowJS quickly revealed a queue would be needed so as to not overwhelm instances. The new Microservices design is aimed at creating a performant sentiment analysis system using TensorflowJS.
-
-## Tech Stack
-
-DiscordJS
-TensorflowJS and/or Google Language API
-Express
-MongoDB
-
-![Microservices Architecture Map](https://imgur.com/lgicwU5.png)
-
-# Discord Bot
+Comparison of sentiment analysis with Google Cloud Platform's Natural Language API against a self-hosted TensorFlowJS pretrained model in test scenarios revealed that system requirements and available resources should be considered. For example, a system with low peak messaging frequency will see lower costs selecting a self-hosted sentiment model, but scaling up can be a challenge. Preprocessing and queuing strategies must be employed for instances running the model not to get inundated and miss messages. GCP's Natural Language API can easily scale and handle high frequencies of messaging, but costs can also exceed those of a self-hosted sentiment analysis model. 
 
 https://github.com/jmsaylor/discord-bot-sentiment
 
-# Backend Gateway
-
-# Frontend Gateway
-
-# Search
-
 https://github.com/jmsaylor/discord-sentiment-api
-
-# Database
-
-# Queue
 
